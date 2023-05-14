@@ -19,7 +19,4 @@ var i = 0
 	return true
 }
 module.exports = palindrome
-}
 
-
-module.exports = palindrome
