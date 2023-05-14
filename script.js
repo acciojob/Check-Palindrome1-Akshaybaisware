@@ -1,19 +1,24 @@
 // complete the given function
 
-function palindrome(str){
-let left=0;
-let right=str.length-1;
+// complete the given function
 
-	while(left<right)
-	{
-		if(str[left]!=str[right])
-		{
-			return false;
+function palindrome(str){
+var s =	str.toLowerCase()
+var i = 0
+	var j = s.length - 1;
+	while (i<j) {
+		if(s.charAt(i)===s.charAt(j)) {
+			i++;
+			j--;
 		}
-		left++;
-		right--;
+		else {
+			return false
+		}
+		
 	}
-	return true;
+	return true
+}
+module.exports = palindrome
 }
 
 
